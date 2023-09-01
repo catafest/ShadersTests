@@ -1,0 +1,8 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://ddlln5mlq25wr"]
+
+[ext_resource type="Shader" path="res://Shaders/spatial_shader_sphere_001.gdshader" id="1_hwd6x"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_hwd6x")
+shader_parameter/var_height = 3.0

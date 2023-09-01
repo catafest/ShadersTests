@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://drbb0a5dtsucs"]
+
+[ext_resource type="Material" uid="uid://ddlln5mlq25wr" path="res://Materials/new_shader_material_001.tres" id="2_00qhm"]
+[ext_resource type="Script" path="res://Scripts/spatial_shader_sphere_001.gd" id="2_a2rfp"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_504ss"]
+
+[node name="SpatialShaderSphere001" type="Node3D"]
+script = ExtResource("2_a2rfp")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.231737, 2.40572)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("SphereMesh_504ss")
+surface_material_override/0 = ExtResource("2_00qhm")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2.40572)
