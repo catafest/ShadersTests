@@ -1,0 +1,7 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://mt6fijloilp5"]
+
+[ext_resource type="Shader" path="res://Shaders/OldTV001.gdshader" id="1_ymq8m"]
+
+[resource]
+shader = ExtResource("1_ymq8m")
+shader_parameter/scanline_count = 35.286

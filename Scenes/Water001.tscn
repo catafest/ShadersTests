@@ -1,0 +1,37 @@
+[gd_scene load_steps=3 format=3 uid="uid://xgydb87ylsro"]
+
+[ext_resource type="Material" uid="uid://cmkls8qvoqgl1" path="res://Materials/Water001.tres" id="1_psfnr"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_yry1h"]
+size = Vector2(3, 3)
+
+[node name="Water001" type="Node3D"]
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="SubViewport" type="SubViewport" parent="SubViewportContainer"]
+handle_input_locally = false
+size = Vector2i(1155, 654)
+render_target_update_mode = 4
+
+[node name="Camera3D" type="Camera3D" parent="SubViewportContainer/SubViewport"]
+transform = Transform3D(1, 0, 0, 0, 0.925329, 0.379166, 0, -0.379166, 0.925329, 0, -0.00182736, -0.0020498)
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="SubViewportContainer/SubViewport"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.424883, -1.29318)
+radius = 0.3
+height = 1.0
+cone = true
+
+[node name="CSGMesh3D" type="CSGMesh3D" parent="SubViewportContainer/SubViewport"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, -0.518477, -1.20902)
+mesh = SubResource("QuadMesh_yry1h")
+material = ExtResource("1_psfnr")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="SubViewportContainer/SubViewport"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.10274, 0)

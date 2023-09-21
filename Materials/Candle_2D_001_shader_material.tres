@@ -1,0 +1,6 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://df0snh30e4cil"]
+
+[ext_resource type="Shader" path="res://Shaders/Candle_2D_001.gdshader" id="1_rb4m8"]
+
+[resource]
+shader = ExtResource("1_rb4m8")

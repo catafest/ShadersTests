@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://bb7twccc8aohl"]
+
+[ext_resource type="Material" uid="uid://df0snh30e4cil" path="res://Materials/Candle_2D_001_shader_material.tres" id="1_r3bx4"]
+[ext_resource type="Texture2D" uid="uid://b7ksdowor6p21" path="res://icon.svg" id="2_0umyd"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+material = ExtResource("1_r3bx4")
+position = Vector2(588, 341)
+scale = Vector2(2.53125, 2.84375)
+texture = ExtResource("2_0umyd")

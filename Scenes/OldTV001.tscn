@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://f7u1goxx7p8g"]
+
+[ext_resource type="Material" uid="uid://mt6fijloilp5" path="res://Materials/OldTV001.tres" id="1_rxs4j"]
+[ext_resource type="Texture2D" uid="uid://b7ksdowor6p21" path="res://icon.svg" id="2_ablyv"]
+
+[node name="OldTV001" type="Node3D"]
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2.21598)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer"]
+texture_filter = 1
+material = ExtResource("1_rxs4j")
+offset_right = 1149.0
+offset_bottom = 649.0
+texture = ExtResource("2_ablyv")
+
+[node name="Sprite3D" type="Sprite3D" parent="CanvasLayer"]
+texture = ExtResource("2_ablyv")

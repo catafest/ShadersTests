@@ -1,0 +1,21 @@
+[gd_resource type="ShaderMaterial" load_steps=4 format=3 uid="uid://cmkls8qvoqgl1"]
+
+[ext_resource type="Shader" path="res://Shaders/Water001.gdshader" id="1_jdsbl"]
+[ext_resource type="Texture2D" uid="uid://dc72caq0ayahl" path="res://Textures/foam.jpg" id="2_ceond"]
+[ext_resource type="Texture2D" uid="uid://bo33tkhso1awb" path="res://Textures/water_normal.jpg" id="3_n7cth"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_jdsbl")
+shader_parameter/surface_color = Color(0.00784314, 0.733333, 0.964706, 1)
+shader_parameter/depth_color = Color(0, 0.27451, 0.439216, 1)
+shader_parameter/opacity = 1.0
+shader_parameter/normal_scale = 4.986
+shader_parameter/beer_factor = 4.176
+shader_parameter/_roughness = 0.186
+shader_parameter/_refraction = 0.026
+shader_parameter/_uv_scale = 0.945
+shader_parameter/_foam_strength = 0.228
+shader_parameter/_foam_size = 0.2
+shader_parameter/_foam = ExtResource("2_ceond")
+shader_parameter/normal_map = ExtResource("3_n7cth")
